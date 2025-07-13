@@ -1,4 +1,4 @@
-/* <!-- made by oscisadev --> */
+/* Made by OSCDEV */
 * {
   margin: 0;
   padding: 0;
@@ -188,3 +188,37 @@ body {
 .avatar-image.status-idle { border-color: #faa61a; }
 .avatar-image.status-dnd { border-color: #f04747; }
 .avatar-image.status-offline { border-color: #747f8d; }
+
+.socials {
+  background-color: rgba(30, 30, 30, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  width: 322px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+  height: 0.5in;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+.github-icon {
+  width: 24px; 
+  height: 24px; 
+  padding: 1px;
+}
+
+
+.youtube-icon {
+  width: 28px; 
+  height: 24px; 
+  padding: 1px;
+}
+.discord-icon {
+  width: 28px; 
+  height: 28px; 
+  padding: 1px;
+}
