@@ -222,3 +222,17 @@ body {
   height: 28px; 
   padding: 1px;
 }
+.skills{
+    background-color: rgba(30, 30, 30, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  width: 322px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 1;
+  height: 0.5in;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
