@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#matrixCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.profile, .rpc {
+  background-color: rgba(30, 30, 30, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  width: 319px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+  margin-left: 3in;
+}
+
+.profile {
+    text-align: center;
+}
+
+.rpc {
+    text-align: left;
+}
+
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.avatar img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.bio {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.status {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.status-card {
+  background-color: #2a2a2a;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+
+.status-card h3 {
+  font-size: 1rem;
+}
+
+.progress-bar {
+  background-color: #333;
+  border-radius: 5px;
+  height: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  background-color: #6a4cdb;
+  height: 100%;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.html-fill {
+  width: 100%;
+}
+
+.css-fill {
+  width: 100%;
+}
+
+.js-fill {
+  width: 75%;
+}
+
+.mern-fill {
+  width: 20%;
+}
+
+.btn {
+  background-color: #6a4cdb;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  margin: 0 5px;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #5a3cb0;
+}
+
+.rpc-header {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #8c8cd9;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.discord-presence-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#discord-status-text {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#discord-activity-text {
+  font-size: 0.95rem;
+  color: #ccc;
+  min-height: 18px;
+}
+
+.status-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.status-online { background-color: #43b581; }
+.status-idle { background-color: #faa61a; }
+.status-dnd { background-color: #f04747; }
+.status-offline { background-color: #747f8d; }
+
+.avatar-image.status-online { border-color: #43b581; }
+.avatar-image.status-idle { border-color: #faa61a; }
+.avatar-image.status-dnd { border-color: #f04747; }
+.avatar-image.status-offline { border-color: #747f8d; }

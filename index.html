@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>oscisadev</title>
+ <link rel="stylesheet" href="style.css">
+ <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="matrixCanvas"></canvas>
+  <div class="rpc" style="margin-right: 3in">
+    <div class="discord-presence-card">
+        <h2>Status</h2>
+        <p><span id="discord-status-dot" class="status-dot"></span> <span id="discord-status-text">Loading status...</span></p>
+        <p id="discord-activity-text">Loading activity...</p>
+
+        <div id="spotify-playback" class="spotify-playback" style="display: none;">
+            <h3>Listening to Spotify</h3>
+            <a id="spotify-track-link" href="#" target="_blank" rel="noopener noreferrer">
+                <img id="spotify-album-art" src="" alt="Album Art" class="album-art">
+                <div class="track-details">
+                    <p id="spotify-song-title" class="song-title"></p>
+                    <p id="spotify-artist" class="artist-name"></p>
+                </div>
+            </a>
+        </div>
+        </div>
+  </div>
+ <div class="profile" style="margin-right: 3in; ">
+  <div class="profile-header">
+   <div class="avatar">
+    <img id="discord-pfp" class="avatar-image" src="placeholder.png" alt="Loading Avatar" />
+   </div>
+   <br>
+   <br>
+   <h1 class="name">OSC</h1>
+  </div>
+  <p class="bio">
+   Hey! My name is "oscisadev"
+    I love Gaming and Programming.
+    Currently im on my way to become a MERN stack dev and my fav font is rubik :3<br>
+    <br>
+  </p>
+  
+ <div class="status">
+    <div class="status-card">
+      <h3>HTML</h3>
+      <div class="progress-bar">
+        <div class="progress-fill html-fill"></div>
+      </div>
+    </div>
+    <div class="status-card">
+      <h3>CSS</h3>
+      <div class="progress-bar">
+        <div class="progress-fill css-fill"></div>
+      </div>
+    </div>
+    <div class="status-card">
+      <h3>JS</h3>
+      <div class="progress-bar">
+        <div class="progress-fill js-fill"></div>
+      </div>
+    </div>
+    <div class="status-card">
+      <h3>MERN</h3>
+      <div class="progress-bar">
+        <div class="progress-fill mern-fill"></div>
+      </div>
+    </div>
+  </div>
+  <script src="matrix.js"></script>
+  <script src="sgiam.js"></script>
+ </body>
+</html>
